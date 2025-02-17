@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS Link -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon Link -->
   <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+ 
+
 
   <title>News HomePage Main</title>
 </head>
@@ -15,6 +21,7 @@
           <div class="logo">
             <img src="./assets/images/logo.svg" alt="News Logo">
           </div>
+          
           <div class="navLinks">
             <a href="#">Home</a>
             <a href="#">New</a>
@@ -22,6 +29,14 @@
             <a href="#">Trending</a>
             <a href="#">Categories</a>
           </div>
+          
+
+          <!-- Hamburger menu -->
+           <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
         </nav>
         <section class="content">
           <main>
@@ -91,6 +106,17 @@
         </footer>
     </div>
 </body>
+
+<script>
+  const hamMenu = document.querySelector(".ham-menu");
+  const navLinks = document.querySelector(".navLinks")
+
+  hamMenu.addEventListener('click', ()=> {
+    hamMenu.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  })
+</script>
+
 </html>
 
 
