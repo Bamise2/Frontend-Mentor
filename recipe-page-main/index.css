@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-size: 1rem;
+    font-family: "Young Serif" , serif;   
+}
+
+p{
+    font-family: Outfit, sans-serif;
+}
+
+ul, ol{
+    padding-left: 1.5rem;
+}
+
+ol {
+    margin-bottom: 1.5rem
+}
+
+h1{
+    margin: 1.2rem 0;
+    color: #3b3b3b;
+}
+
+
+h2{
+    color: hsl(14, 45%, 36%);
+    margin: 1.5rem 0;
+}
+
+
+
+
+
+.container{
+    margin: 5rem auto;
+    width: 55%;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.content-img img{
+    width: 100%;
+    height: auto;
+    border-radius: .8rem;
+}
+
+.content-container{
+    padding: 2rem;
+    padding-bottom: .5rem;
+}
+
+.intro{
+    color:  hsl(30, 10%, 34%);
+    line-height: 1.4rem;
+}
+
+.prep-container{
+    background-color:  hsl(330, 100%, 98%);
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1.1rem;
+    line-height: 2rem;
+}
+
+.prep-container h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: .5rem;
+}
+
+.ingredients{
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.instruction{
+    line-height: 1.7rem
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+td{
+    border-bottom: .1px solid #e0e0e0;
+    padding: 1rem;
+}
+
+.nutri-value{
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* Responsive Design */
+@media(max-width: 768px){
+    .container {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .content-img{
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .content-img img{
+        border-radius: 0;
+    }
+}
