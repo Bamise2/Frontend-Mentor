@@ -56,6 +56,10 @@ nav a:hover {
     color: var(--softRed);
 }
 
+.ham-menu{
+    position: absolute;
+}
+
 
 .content {
     display: grid;
@@ -209,72 +213,71 @@ footer {
         overflow-x: hidden;
     }
 
-    
-
-    .navLinks{
-       /* visibility: hidden; */
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       position: fixed;
-       background-color: var(--veryDarkBlue);
-       height: 100%;
-       width: 100%;
-       max-width: 400px;
-       top: 0;
-       right: -70%;
-       font-size: 2.5rem;
-       transition: .3s ease;
-
+    .navLinks
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--veryDarkBlue);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        font-size: 2rem;
+        transition: .3s ease;
     }
 
-    .navLinks.active {
+    .navLinks.active{
         right: 0;
     }
 
-    .ham-menu {
-        height: 50px;
-        width: 50px;
+    .ham-menu{
+        height: 3rem;
+        width: 3rem;
         position: relative;
         margin-right: 10px;
     }
 
-    .ham-menu span {
+    .ham-menu:hover{
+        cursor: pointer;
+    }
+
+    .ham-menu span{
         display: block;
         background-color: var(--darkGrayishBlue);
-        border-radius: 10px;
-        height: 10px;
+        height: 5px;
         width: 100%;
-        position: absolute;
+        border-radius: 10px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute;
+        transform: translate(-50%);
         transition: .3s ease;
+        cursor: pointer
     }
 
     .ham-menu span:nth-child(1){
-        top: 25%;
+        top: 29%;
     }
     .ham-menu span:nth-child(3){
-        top: 75%;
+        top: 71%;
     }
 
     .ham-menu.active span:nth-child(1){
         top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%) rotate(45deg) 
     }
 
     .ham-menu.active span:nth-child(2){
         opacity: 0;
     }
-
     .ham-menu.active span:nth-child(3){
         top: 50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%) rotate(-45deg);
     }
-
-
+ 
     .content{
         grid-template-columns: 1fr;
         align-items: center;
