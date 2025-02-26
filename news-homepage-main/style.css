@@ -73,7 +73,7 @@ nav a:hover {
 main img{
     margin-bottom: 20px;
     width: 100%;
-    height: auto;
+   height: auto;
 }
 
 
@@ -234,6 +234,7 @@ footer {
         right: 0;
     }
 
+
     .ham-menu{
         height: 3rem;
         width: 3rem;
@@ -278,6 +279,8 @@ footer {
         top: 50%;
         transform: translate(-50%) rotate(-45deg);
     }
+
+    
  
     .content{
         grid-template-columns: 1fr;
